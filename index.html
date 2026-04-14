@@ -18,13 +18,13 @@
 
 <div class="container header-content">
 
-<img src="logo.png" class="logo" alt="Logo">
+<img src="images/logo.png" class="logo" alt="Logo Robotics 4.0">
 
 <div>
 
-<h1>UNITREE Go2 Setup - Robotics 4.0</h1>
+<h1>🤖 UNITREE Go2 Setup - Robotics 4.0</h1>
 
-<p>Ejemplos y demostraciones para el robot UNITREE Go2</p>
+<p>Guías, ejemplos y demostraciones usando el SDK oficial</p>
 
 </div>
 
@@ -38,38 +38,39 @@
 <section class="intro">
 
 <p>
-Bienvenido al repositorio de Robotics 4.0 para el robot UNITREE Go2.
+👋 Bienvenido al repositorio de <strong>Robotics 4.0</strong> para el robot
+cuadrúpedo <strong>UNITREE Go2</strong>.
 Aquí encontrarás guías de instalación, configuración y ejemplos
 prácticos usando el SDK oficial.
 </p>
 
 <p class="authors">
-Autores: Sofia Castaño, Samuel Romero, Adrian Chavarro, Mario Arbulu
+👨‍💻 Autor: Santiago Guerrero
 </p>
 
 <p>
-Comienza con la instalación de los componentes esenciales:
+🚀 Comienza con la instalación de los componentes esenciales:
 </p>
 
 <div class="buttons">
 
-<a href="docs/install_sdk2.md" class="btn">
-Instalar unitree_sdk2
-</a>
+<button onclick="openDoc('install_sdk2.md')" class="btn">
+⚙️ Instalar unitree_sdk2
+</button>
 
-<a href="docs/install_ros.md" class="btn">
-Instalar unitree_ros
-</a>
+<button onclick="openDoc('install_ros.md')" class="btn">
+🤖 Instalar unitree_ros
+</button>
 
-<a href="docs/install_sdk2_python.md" class="btn">
-Instalar unitree_sdk2_python
-</a>
+<button onclick="openDoc('install_sdk2_python.md')" class="btn">
+🐍 Instalar SDK2 Python
+</button>
 
 </div>
 
 <p class="note">
-Si no cuentas con el robot físico, puedes usar simulación para
-probar los ejemplos.
+💡 Si no cuentas con el robot físico, puedes usar simulación
+para probar los ejemplos.
 </p>
 
 </section>
@@ -77,113 +78,215 @@ probar los ejemplos.
 
 <section class="main-buttons">
 
-<a href="docs/install_simulation.md" class="btn big">
-Instalación simulación
-</a>
+<button onclick="openDoc('simulation_install.md')" class="btn big">
+🖥️ Instalación simulación
+</button>
 
-<a href="docs/run_simulation.md" class="btn big">
-Ejecutar simulación
-</a>
+<button onclick="openDoc('simulation_run.md')" class="btn big">
+🎮 Ejecutar simulación
+</button>
 
-<a href="docs/conexion_robot.md" class="btn big">
-Conectar robot Go2
-</a>
-
-</section>
-
-
-<section class="sequence">
-
-<a href="docs/secuencia.md" class="sequence-btn">
-Ver secuencia del proyecto
-</a>
+<button onclick="openDoc('conexion_robot.md')" class="btn big">
+🔌 Conectar robot Go2
+</button>
 
 </section>
-
-
-<p class="examples-text">
-Ejemplos prácticos del robot Go2
-</p>
 
 
 <section class="grid">
 
+
+<!-- BAJO NIVEL -->
+
 <div class="card">
 
-<h3>Bajo nivel</h3>
+<h3>⚡ Bajo nivel</h3>
 
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<div class="video-container">
 
-<a href="docs/low_level.md" class="btn small">
-Ver guía
+<a class="video-link"
+href="https://www.youtube.com/watch?v=ph_pl-_PxQM"
+target="_blank">
+
+<img
+class="video-thumb"
+src="https://img.youtube.com/vi/ph_pl-_PxQM/maxresdefault.jpg"
+alt="Video Bajo Nivel">
+
+<div class="video-overlay">
+▶️ Ver video en YouTube
+</div>
+
 </a>
 
 </div>
 
-
-<div class="card">
-
-<h3>Alto nivel</h3>
-
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-
-<a href="docs/high_level.md" class="btn small">
-Ver guía
-</a>
+<button onclick="openDoc('low_level.md')" class="btn small">
+📄 Ver guía
+</button>
 
 </div>
 
 
+<!-- ALTO NIVEL -->
+
 <div class="card">
 
-<h3>Control WASD</h3>
+<h3>🧠 Alto nivel</h3>
 
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<div class="video-container">
 
-<a href="docs/wasd_control.md" class="btn small">
-Ver guía
+<a class="video-link"
+href="https://www.youtube.com/watch?v=ph_pl-_PxQM"
+target="_blank">
+
+<img
+class="video-thumb"
+src="https://img.youtube.com/vi/ph_pl-_PxQM/maxresdefault.jpg"
+alt="Video Alto Nivel">
+
+<div class="video-overlay">
+▶️ Ver video en YouTube
+</div>
+
 </a>
 
 </div>
 
-
-<div class="card">
-
-<h3>Trayectoria</h3>
-
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-
-<a href="docs/trayectoria.md" class="btn small">
-Ver guía
-</a>
+<button onclick="openDoc('high_level.md')" class="btn small">
+📄 Ver guía
+</button>
 
 </div>
 
 
+<!-- WASD -->
+
 <div class="card">
 
-<h3>Odometría</h3>
+<h3>🎮 Control WASD</h3>
 
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<div class="video-container">
 
-<a href="docs/odometria.md" class="btn small">
-Ver guía
+<a class="video-link"
+href="https://www.youtube.com/watch?v=ph_pl-_PxQM"
+target="_blank">
+
+<img
+class="video-thumb"
+src="https://img.youtube.com/vi/ph_pl-_PxQM/maxresdefault.jpg"
+alt="Video WASD">
+
+<div class="video-overlay">
+▶️ Ver video en YouTube
+</div>
+
 </a>
 
 </div>
 
+<button onclick="openDoc('wasd_control.md')" class="btn small">
+📄 Ver guía
+</button>
+
+</div>
+
+
+<!-- TRAYECTORIA -->
 
 <div class="card">
 
-<h3>Navegación</h3>
+<h3>🧭 Trayectoria</h3>
 
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<div class="video-container">
 
-<a href="docs/navegacion.md" class="btn small">
-Ver guía
+<a class="video-link"
+href="https://www.youtube.com/watch?v=ph_pl-_PxQM"
+target="_blank">
+
+<img
+class="video-thumb"
+src="https://img.youtube.com/vi/ph_pl-_PxQM/maxresdefault.jpg"
+alt="Video Trayectoria">
+
+<div class="video-overlay">
+▶️ Ver video en YouTube
+</div>
+
 </a>
 
 </div>
+
+<button onclick="openDoc('trayectoria.md')" class="btn small">
+📄 Ver guía
+</button>
+
+</div>
+
+
+<!-- ODOMETRIA -->
+
+<div class="card">
+
+<h3>📍 Odometría</h3>
+
+<div class="video-container">
+
+<a class="video-link"
+href="https://www.youtube.com/watch?v=ph_pl-_PxQM"
+target="_blank">
+
+<img
+class="video-thumb"
+src="https://img.youtube.com/vi/ph_pl-_PxQM/maxresdefault.jpg"
+alt="Video Odometría">
+
+<div class="video-overlay">
+▶️ Ver video en YouTube
+</div>
+
+</a>
+
+</div>
+
+<button onclick="openDoc('odometria.md')" class="btn small">
+📄 Ver guía
+</button>
+
+</div>
+
+
+<!-- NAVEGACION -->
+
+<div class="card">
+
+<h3>🗺️ Navegación</h3>
+
+<div class="video-container">
+
+<a class="video-link"
+href="https://www.youtube.com/watch?v=ph_pl-_PxQM"
+target="_blank">
+
+<img
+class="video-thumb"
+src="https://img.youtube.com/vi/ph_pl-_PxQM/maxresdefault.jpg"
+alt="Video Navegación">
+
+<div class="video-overlay">
+▶️ Ver video en YouTube
+</div>
+
+</a>
+
+</div>
+
+<button onclick="openDoc('navegacion.md')" class="btn small">
+📄 Ver guía
+</button>
+
+</div>
+
 
 </section>
 
@@ -192,9 +295,11 @@ Ver guía
 
 <footer>
 
-<p>© 2025 Robotics 4.0 - UNITREE Go2</p>
+<p>🤖 © 2026 Robotics 4.0 - UNITREE Go2</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 
