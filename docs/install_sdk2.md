@@ -25,7 +25,7 @@ cmake ..
 
 ## 📌 Resultado esperado
 
-![Build SDK2](images/Instalacion_unitree_sdk2/build.png)
+![Build SDK2](../images/Instalacion_unitree_sdk2/build.png)
 
 ## Instalar la librería
 
@@ -35,7 +35,7 @@ sudo make install
 
 ## 📌 Resultado esperado
 
-![Install SDK2](images/Instalacion_unitree_sdk2/install.png)
+![Install SDK2](../images/Instalacion_unitree_sdk2/install.png)
 
 ## Probar la instalación usando Hello World
 
@@ -86,7 +86,7 @@ Para visualizar la referencia original [Unitree SDK2](https://github.com/unitree
 ### Asociación de librería erronea:
 
 Si aparece el siguiente error:
-![Error librería](images/Instalacion_unitree_sdk2/error_lib.png)
+![Error librería](../images/Instalacion_unitree_sdk2/error_lib.png)
 Se debe a que no se encuentra asociada la librería instalada correctamente, la cual está
 ubicada en **usr/local/lib**. Para visualizar la librería que está asociada se ejecuta:
 
@@ -96,7 +96,7 @@ ldd ./test_subscriber
 
 Si se encuentra una librería con ubicación diferente tal como la siguiente
 imagen:
-![ldd resultado](images/Instalacion_unitree_sdk2/ldd.png)
+![ldd resultado](../images/Instalacion_unitree_sdk2/ldd.png)
 
 Se deben ejecutar los siguientes comandos:
 
