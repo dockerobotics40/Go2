@@ -42,6 +42,8 @@ Según el flujo del curso, la simulación se ejecuta con:
 go2_sport_client
 ```
 
+![simulation run](../images/Instalacion_unitree_sdk2/simulation_run.png)
+
 Este comando inicia el entorno de control para el robot en simulación.
 
 ---

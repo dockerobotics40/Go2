@@ -82,6 +82,8 @@ Según el flujo del curso:
 go2_sport_client
 ```
 
+![simulation install](../images/Instalacion_unitree_sdk2/simulation_install.png)
+
 ---
 
 ## 🤖 Uso de la simulación
