@@ -1,8 +1,8 @@
-# ⚙️ Control Low-Level en Unitree Go2
+#  Control Low-Level en Unitree Go2
 
 ---
 
-## 📌 1. Descripción General
+##  1. Descripción General
 
 El control **Low-Level** en el robot **Unitree Go2** permite interactuar directamente con los actuadores del robot, gestionando variables como posición, velocidad y torque de cada articulación.
 
@@ -15,7 +15,7 @@ Este tipo de control está diseñado para:
 
 ---
 
-## 🧠 2. Concepto de Low-Level Control
+##  2. Concepto de Low-Level Control
 
 A diferencia del control High-Level, el control Low-Level opera directamente sobre las articulaciones del robot.
 
@@ -33,7 +33,7 @@ Torque
 
 ---
 
-## ⚙️ 3. Arquitectura del Sistema
+##  3. Arquitectura del Sistema
 
 ```text
 Usuario → Controlador Personalizado → Señales de Bajo Nivel → Actuadores
@@ -50,7 +50,7 @@ Usuario → Controlador Personalizado → Señales de Bajo Nivel → Actuadores
 
 ---
 
-## ⚙️ 4. Modelo de Control
+##  4. Modelo de Control
 
 Cada articulación del robot puede ser controlada mediante:
 
@@ -62,7 +62,7 @@ tau → torque
 
 ---
 
-### 📌 Ejemplo conceptual
+###  Ejemplo conceptual
 
 ```text
 Mover articulación → q objetivo
@@ -72,7 +72,7 @@ Aplicar fuerza → tau
 
 ---
 
-## 🔁 5. Flujo del Sistema
+##  5. Flujo del Sistema
 
 ```text
 Leer estado → Calcular control → Generar señales → Enviar → Ejecutar → Repetir
@@ -80,7 +80,7 @@ Leer estado → Calcular control → Generar señales → Enviar → Ejecutar �
 
 ---
 
-## 🔁 6. Diagrama de Flujo
+##  6. Diagrama de Flujo
 
 ```text
 [Inicio]
@@ -100,9 +100,9 @@ Leer estado → Calcular control → Generar señales → Enviar → Ejecutar �
 
 ---
 
-## 🚀 7. Implementación en SDK
+##  7. Implementación en SDK
 
-### 📄 Archivo de referencia
+###  Archivo de referencia
 
 ```bash
 go2_low_level.py
@@ -110,7 +110,7 @@ go2_low_level.py
 
 ---
 
-### ▶️ Ejecución
+###  Ejecución
 
 ```bash
 python3 go2_low_level.py <networkInterface>
@@ -118,7 +118,7 @@ python3 go2_low_level.py <networkInterface>
 
 ---
 
-## 🧩 8. Funcionamiento Interno
+##  8. Funcionamiento Interno
 
 El sistema Low-Level realiza:
 
@@ -130,7 +130,7 @@ El sistema Low-Level realiza:
 
 ---
 
-## 🧪 9. Ejemplo en Python
+##  9. Ejemplo en Python
 
 ```python
 state = robot.get_state()
@@ -151,7 +151,7 @@ for joint in state.joints:
 
 ---
 
-## 🎯 10. Control en Tiempo Real
+##  10. Control en Tiempo Real
 
 ```python
 while True:
@@ -164,7 +164,7 @@ while True:
 
 ---
 
-## ⚠️ 11. Riesgos y Limitaciones
+##  11. Riesgos y Limitaciones
 
 * Alto riesgo de daño al robot
 * Requiere conocimiento avanzado
@@ -173,7 +173,7 @@ while True:
 
 ---
 
-## 🧪 12. Flujo de Uso
+##  12. Flujo de Uso
 
 ```text
 1. Conectar robot
@@ -186,7 +186,7 @@ while True:
 
 ---
 
-## 🧰 13. Buenas Prácticas
+##  13. Buenas Prácticas
 
 * Implementar límites de seguridad
 * Usar controladores probados (PID)
@@ -196,7 +196,7 @@ while True:
 
 ---
 
-## 🧠 14. Aplicaciones
+##  14. Aplicaciones
 
 * Control de locomoción avanzado
 * Investigación en robótica
@@ -206,7 +206,7 @@ while True:
 
 ---
 
-## 🧠 15. Comparación con High-Level
+##  15. Comparación con High-Level
 
 ```text
 Low-Level  → Máximo control, alta complejidad
@@ -215,7 +215,7 @@ High-Level → Fácil uso, menor control
 
 ---
 
-## 🧠 16. Conclusión
+##  16. Conclusión
 
 El control **Low-Level** proporciona acceso total al comportamiento del robot **Unitree Go2**, permitiendo desarrollar soluciones altamente personalizadas.
 

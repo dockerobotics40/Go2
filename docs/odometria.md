@@ -1,8 +1,8 @@
-# 🛰️ Odometría en Unitree Go2
+#  Odometría en Unitree Go2
 
 ---
 
-## 📌 1. Descripción General
+##  1. Descripción General
 
 La odometría en el robot **Unitree Go2** es el sistema encargado de estimar en tiempo real el estado cinemático del robot, incluyendo su posición, orientación y velocidades, a partir de sensores internos.
 
@@ -15,13 +15,13 @@ Este módulo es fundamental para:
 
 ---
 
-## 🧠 2. Modelo de Estado del Robot
+##  2. Modelo de Estado del Robot
 
 La odometría describe el estado del robot mediante tres componentes principales:
 
 ---
 
-### 📍 2.1 Posición
+###  2.1 Posición
 
 Define la ubicación del robot en un sistema de referencia cartesiano.
 
@@ -33,7 +33,7 @@ z → altura
 
 ---
 
-### 🔄 2.2 Orientación
+###  2.2 Orientación
 
 Define la rotación del robot utilizando ángulos de Euler.
 
@@ -45,7 +45,7 @@ yaw   → orientación (rotación en el plano)
 
 ---
 
-### ⚡ 2.3 Velocidades
+###  2.3 Velocidades
 
 Representan el movimiento lineal y angular del robot.
 
@@ -57,7 +57,7 @@ wz → velocidad angular (yaw)
 
 ---
 
-## ⚙️ 3. Arquitectura del Sistema de Odometría
+##  3. Arquitectura del Sistema de Odometría
 
 El flujo de procesamiento de la odometría sigue el siguiente esquema:
 
@@ -74,7 +74,7 @@ Sensores → Procesamiento → Estimación de Estado → Publicación de Datos
 
 ---
 
-## 🔁 4. Flujo Operativo
+##  4. Flujo Operativo
 
 ```
 [Inicio]
@@ -94,9 +94,9 @@ Sensores → Procesamiento → Estimación de Estado → Publicación de Datos
 
 ---
 
-## 🚀 5. Implementación en SDK
+##  5. Implementación en SDK
 
-### 📄 Archivo de referencia
+###  Archivo de referencia
 
 ```
 go2_odometry.py
@@ -104,7 +104,7 @@ go2_odometry.py
 
 ---
 
-### ▶️ Ejecución
+###  Ejecución
 
 ```
 python3 go2_odometry.py <networkInterface>
@@ -116,7 +116,7 @@ Donde:
 
 ---
 
-## 🧩 6. Funcionamiento Interno
+##  6. Funcionamiento Interno
 
 El módulo de odometría realiza las siguientes operaciones:
 
@@ -128,7 +128,7 @@ El módulo de odometría realiza las siguientes operaciones:
 
 ---
 
-## 📊 7. Ejemplo de Salida
+##  7. Ejemplo de Salida
 
 ```
 Position: x=1.20, y=0.35, z=0.00
@@ -138,7 +138,7 @@ Velocity: vx=0.10, vy=0.00, wz=0.05
 
 ---
 
-## 🧪 8. Ejemplo de Integración en Python
+##  8. Ejemplo de Integración en Python
 
 ```
 state = robot.get_state()
@@ -166,7 +166,7 @@ print(f"Velocidad: ({vx}, {vy}, {wz})")
 
 ---
 
-## ⚠️ 9. Limitaciones del Sistema
+##  9. Limitaciones del Sistema
 
 La odometría presenta limitaciones inherentes:
 
@@ -177,7 +177,7 @@ La odometría presenta limitaciones inherentes:
 
 ---
 
-## 🧪 10. Flujo de Uso Recomendado
+##  10. Flujo de Uso Recomendado
 
 ```
 1. Establecer conexión con el robot
@@ -188,7 +188,7 @@ La odometría presenta limitaciones inherentes:
 
 ---
 
-## 🧰 11. Buenas Prácticas
+##  11. Buenas Prácticas
 
 * Verificar conectividad antes de ejecución
 * Monitorear datos continuamente
@@ -198,7 +198,7 @@ La odometría presenta limitaciones inherentes:
 
 ---
 
-## 🧠 12. Aplicaciones
+##  12. Aplicaciones
 
 La odometría es utilizada en:
 
@@ -210,7 +210,7 @@ La odometría es utilizada en:
 
 ---
 
-## 🧠 13. Conclusión
+##  13. Conclusión
 
 La odometría constituye un componente esencial en el sistema de control del **Unitree Go2**, proporcionando información crítica sobre el estado del robot en tiempo real.
 

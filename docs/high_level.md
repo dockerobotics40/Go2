@@ -1,8 +1,8 @@
-# 🧠 Control High-Level en Unitree Go2
+#  Control High-Level en Unitree Go2
 
 ---
 
-## 📌 1. Descripción General
+##  1. Descripción General
 
 El control **High-Level** en el robot **Unitree Go2** permite interactuar con el robot mediante comandos abstractos de alto nivel, sin necesidad de gestionar directamente actuadores o señales de bajo nivel.
 
@@ -15,7 +15,7 @@ Este tipo de control está diseñado para:
 
 ---
 
-## 🧠 2. Concepto de High-Level Control
+##  2. Concepto de High-Level Control
 
 El control de alto nivel abstrae la complejidad del hardware, permitiendo al usuario enviar comandos como:
 
@@ -34,7 +34,7 @@ Motores → Torque → Posiciones articulares
 
 ---
 
-## ⚙️ 3. Arquitectura del Sistema
+##  3. Arquitectura del Sistema
 
 ```text
 Usuario → API High-Level → Controlador Interno → Hardware
@@ -51,7 +51,7 @@ Usuario → API High-Level → Controlador Interno → Hardware
 
 ---
 
-## ⚙️ 4. Modelo de Control
+##  4. Modelo de Control
 
 El usuario envía comandos de velocidad o movimiento:
 
@@ -63,7 +63,7 @@ wz → velocidad angular
 
 ---
 
-### 📌 Ejemplo conceptual
+###  Ejemplo conceptual
 
 ```text
 Avanzar → vx > 0
@@ -73,7 +73,7 @@ Detener → vx = 0, wz = 0
 
 ---
 
-## 🔁 5. Flujo del Sistema
+##  5. Flujo del Sistema
 
 ```text
 Definir comando → Procesar → Enviar → Ejecutar → Retroalimentación
@@ -81,7 +81,7 @@ Definir comando → Procesar → Enviar → Ejecutar → Retroalimentación
 
 ---
 
-## 🔁 6. Diagrama de Flujo
+##  6. Diagrama de Flujo
 
 ```text
 [Inicio]
@@ -101,9 +101,9 @@ Definir comando → Procesar → Enviar → Ejecutar → Retroalimentación
 
 ---
 
-## 🚀 7. Implementación en SDK
+##  7. Implementación en SDK
 
-### 📄 Archivo de referencia
+###  Archivo de referencia
 
 ```bash
 go2_high_level.py
@@ -111,7 +111,7 @@ go2_high_level.py
 
 ---
 
-### ▶️ Ejecución
+###  Ejecución
 
 ```bash
 python3 go2_high_level.py <networkInterface>
@@ -119,7 +119,7 @@ python3 go2_high_level.py <networkInterface>
 
 ---
 
-## 🧩 8. Funcionamiento Interno
+##  8. Funcionamiento Interno
 
 El sistema High-Level realiza:
 
@@ -131,7 +131,7 @@ El sistema High-Level realiza:
 
 ---
 
-## 🧪 9. Ejemplo en Python
+##  9. Ejemplo en Python
 
 ```python
 # Avanzar
@@ -146,7 +146,7 @@ robot.send_velocity(vx=0.0, vy=0.0, wz=0.0)
 
 ---
 
-## 🎯 10. Control Continuo
+##  10. Control Continuo
 
 ```python
 while True:
@@ -155,7 +155,7 @@ while True:
 
 ---
 
-## ⚠️ 11. Limitaciones
+##  11. Limitaciones
 
 * Menor control detallado sobre actuadores
 * Dependencia del controlador interno
@@ -164,7 +164,7 @@ while True:
 
 ---
 
-## 🧪 12. Flujo de Uso
+##  12. Flujo de Uso
 
 ```text
 1. Conectar robot
@@ -176,7 +176,7 @@ while True:
 
 ---
 
-## 🧰 13. Buenas Prácticas
+##  13. Buenas Prácticas
 
 * Usar valores de velocidad moderados
 * Validar comandos antes de enviar
@@ -186,7 +186,7 @@ while True:
 
 ---
 
-## 🧠 14. Aplicaciones
+##  14. Aplicaciones
 
 * Navegación autónoma
 * Control de movimiento básico
@@ -196,7 +196,7 @@ while True:
 
 ---
 
-## 🧠 15. Comparación con Low-Level
+##  15. Comparación con Low-Level
 
 ```text
 High-Level → Fácil de usar, menos control
@@ -205,7 +205,7 @@ Low-Level  → Complejo, máximo control
 
 ---
 
-## 🧠 16. Conclusión
+##  16. Conclusión
 
 El control **High-Level** permite interactuar de manera eficiente con el robot **Unitree Go2**, facilitando el desarrollo de aplicaciones complejas sin necesidad de gestionar detalles internos del hardware.
 

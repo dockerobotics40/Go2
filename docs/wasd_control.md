@@ -1,8 +1,8 @@
-# 🎮 Control WASD en Unitree Go2
+#  Control WASD en Unitree Go2
 
 ---
 
-## 📌 1. Descripción General
+##  1. Descripción General
 
 El control **WASD** en el robot **Unitree Go2** permite manejar el robot manualmente mediante el teclado, utilizando un esquema de control intuitivo basado en las teclas **W, A, S, D**.
 
@@ -15,7 +15,7 @@ Este modo es utilizado principalmente para:
 
 ---
 
-## 🧠 2. Concepto de Control WASD
+##  2. Concepto de Control WASD
 
 El sistema WASD traduce entradas del teclado en comandos de velocidad enviados al robot.
 
@@ -25,7 +25,7 @@ Entrada (teclado) → Procesamiento → Comando de movimiento → Robot
 
 ---
 
-## 🎮 3. Mapeo de Teclas
+##  3. Mapeo de Teclas
 
 Las teclas se asignan a movimientos específicos:
 
@@ -38,7 +38,7 @@ D → Girar a la derecha
 
 ---
 
-### 📌 Representación
+###  Representación
 
 ```text
         W
@@ -50,7 +50,7 @@ A   ←       →   D
 
 ---
 
-## ⚙️ 4. Modelo de Control
+##  4. Modelo de Control
 
 Cada tecla genera un comando de velocidad:
 
@@ -68,7 +68,7 @@ Donde:
 
 ---
 
-## ⚙️ 5. Flujo del Sistema
+##  5. Flujo del Sistema
 
 ```text
 Lectura de teclado → Interpretación → Generación de comando → Envío al robot
@@ -76,7 +76,7 @@ Lectura de teclado → Interpretación → Generación de comando → Envío al 
 
 ---
 
-## 🔁 6. Diagrama de Flujo
+##  6. Diagrama de Flujo
 
 ```text
 [Inicio]
@@ -96,9 +96,9 @@ Lectura de teclado → Interpretación → Generación de comando → Envío al 
 
 ---
 
-## 🚀 7. Implementación en SDK
+##  7. Implementación en SDK
 
-### 📄 Archivo de referencia
+###  Archivo de referencia
 
 ```bash
 go2_wasd_control.py
@@ -106,7 +106,7 @@ go2_wasd_control.py
 
 ---
 
-### ▶️ Ejecución
+###  Ejecución
 
 ```bash
 python3 go2_wasd_control.py <networkInterface>
@@ -114,7 +114,7 @@ python3 go2_wasd_control.py <networkInterface>
 
 ---
 
-## 🧩 8. Funcionamiento Interno
+##  8. Funcionamiento Interno
 
 El sistema realiza:
 
@@ -126,7 +126,7 @@ El sistema realiza:
 
 ---
 
-## 🧪 9. Ejemplo en Python
+##  9. Ejemplo en Python
 
 ```python
 key = get_key()
@@ -146,7 +146,7 @@ elif key == 'd':
 
 ---
 
-## 🎯 10. Control en Tiempo Real
+##  10. Control en Tiempo Real
 
 El control WASD funciona en un loop continuo:
 
@@ -160,7 +160,7 @@ while True:
 
 ---
 
-## ⚠️ 11. Limitaciones
+##  11. Limitaciones
 
 * No es autónomo
 * Requiere intervención humana constante
@@ -169,7 +169,7 @@ while True:
 
 ---
 
-## 🧪 12. Flujo de Uso
+##  12. Flujo de Uso
 
 ```text
 1. Conectar robot
@@ -181,7 +181,7 @@ while True:
 
 ---
 
-## 🧰 13. Buenas Prácticas
+##  13. Buenas Prácticas
 
 * Usar velocidades bajas inicialmente
 * Operar en entornos seguros
@@ -191,7 +191,7 @@ while True:
 
 ---
 
-## 🧠 14. Aplicaciones
+##  14. Aplicaciones
 
 * Pruebas de movimiento
 * Calibración
@@ -201,6 +201,6 @@ while True:
 
 ---
 
-## 🧠 15. Conclusión
+##  15. Conclusión
 
 El control WASD proporciona una forma simple, directa e intuitiva de interactuar con el robot **Unitree Go2**, permitiendo validar rápidamente su comportamiento y realizar pruebas en tiempo real sin necesidad de sistemas autónomos complejos.

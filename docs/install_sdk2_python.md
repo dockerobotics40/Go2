@@ -1,8 +1,8 @@
-# 🐍 Instalación de SDK2 Python para Unitree Go2
+#  Instalación de SDK2 Python para Unitree Go2
 
 ---
 
-## 📌 Descripción
+##  Descripción
 
 El **SDK2 Python de Unitree** permite controlar el robot Go2 mediante comandos de alto nivel de forma sencilla y rápida.
 
@@ -16,15 +16,15 @@ A diferencia de C++, Python es más fácil de usar, aunque con menor rendimiento
 
 ---
 
-## 🧠 Conceptos Clave
+##  Conceptos Clave
 
-### ⚡ SDK2 Python
+###  SDK2 Python
 
 * Basado en `unitree_sdk2`
 * Interfaz simplificada para control del robot
 * Uso orientado a objetos
 
-### 🔗 Comunicación
+###  Comunicación
 
 * Utiliza **DDS (Data Distribution Service)**
 * Permite:
@@ -32,7 +32,7 @@ A diferencia de C++, Python es más fácil de usar, aunque con menor rendimiento
   * Enviar comandos
   * Recibir estado del robot
 
-### 🤖 Control de alto nivel
+###  Control de alto nivel
 
 * No requiere manejar motores directamente
 * Permite:
@@ -42,7 +42,7 @@ A diferencia de C++, Python es más fácil de usar, aunque con menor rendimiento
 
 ---
 
-## ⚙️ Requisitos
+##  Requisitos
 
 * Ubuntu 20.04
 * Python 3
@@ -51,21 +51,21 @@ A diferencia de C++, Python es más fácil de usar, aunque con menor rendimiento
 
 ---
 
-## 🚀 Instalación del SDK2 Python
+##  Instalación del SDK2 Python
 
-### 1️⃣ Clonar el repositorio
+### 1️ Clonar el repositorio
 
 ```bash
 git clone https://github.com/unitreerobotics/unitree_sdk2_python.git
 ```
 
-### 2️⃣ Entrar al directorio
+### 2️ Entrar al directorio
 
 ```bash
 cd unitree_sdk2_python
 ```
 
-### 3️⃣ Instalar dependencias
+### 3️ Instalar dependencias
 
 ```bash
 pip3 install -r requirements.txt
@@ -73,7 +73,7 @@ pip3 install -r requirements.txt
 
 ---
 
-## 🔧 Configuración de red
+##  Configuración de red
 
 Antes de ejecutar cualquier código, debes definir la interfaz de red:
 
@@ -85,7 +85,7 @@ Busca tu interfaz (ejemplo: `eth0`, `enp3s0`)
 
 ---
 
-## ▶️ Ejecución de ejemplo
+##  Ejecución de ejemplo
 
 Ir al directorio de ejemplos:
 
@@ -107,15 +107,15 @@ python3 go2_sport_client_example.py eth0
 
 ---
 
-## 🎮 Comandos disponibles
+##  Comandos disponibles
 
-### 🔢 Con parámetros
+###  Con parámetros
 
 * `move = "vx, vy, vyaw"` → Movimiento en ejes
 * `velocity_move` → Movimiento continuo
 * `balance_stand` → Control de orientación
 
-### 🔘 Sin parámetros
+###  Sin parámetros
 
 * `stand_up` → Levantarse
 * `stand_down` → Acostarse
@@ -125,7 +125,7 @@ python3 go2_sport_client_example.py eth0
 
 ---
 
-## ⌨️ Control con teclado (WASD)
+##  Control con teclado (WASD)
 
 Ejecutar:
 
@@ -145,7 +145,7 @@ python3 go2_wasd_control.py <networkInterface>
 
 ---
 
-## 📊 ¿Cuándo usar SDK2 Python?
+##  ¿Cuándo usar SDK2 Python?
 
 ✔ Prototipos rápidos
 ✔ Desarrollo sencillo
@@ -154,7 +154,7 @@ python3 go2_wasd_control.py <networkInterface>
 
 ---
 
-## ⚠️ Notas importantes
+##  Notas importantes
 
 * No usar para control crítico en tiempo real
 * Menor rendimiento que C++
@@ -163,7 +163,7 @@ python3 go2_wasd_control.py <networkInterface>
 
 ---
 
-## 📚 Recomendación
+##  Recomendación
 
 Usar:
 

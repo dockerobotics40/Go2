@@ -1,8 +1,8 @@
-# ▶️ Ejecución de simulación en Unitree Go2
+#  Ejecución de simulación en Unitree Go2
 
 ---
 
-## 📌 Descripción
+##  Descripción
 
 Este apartado describe cómo ejecutar la simulación del robot Unitree Go2 utilizando los ejemplos disponibles en la SDK2.
 
@@ -10,23 +10,23 @@ La simulación permite probar comandos de control y validar comportamientos sin 
 
 ---
 
-## 🧠 Conceptos Clave
+##  Conceptos Clave
 
-### 🔄 Flujo de ejecución
+###  Flujo de ejecución
 
 * Inicializar entorno
 * Ejecutar cliente de control
 * Enviar comandos
 * Observar comportamiento
 
-### 🎮 Control en simulación
+###  Control en simulación
 
 * Se utilizan los mismos comandos que en el robot real
 * Basado en control de alto nivel
 
 ---
 
-## ⚙️ Requisitos
+##  Requisitos
 
 * Entorno de simulación instalado
 * SDK2 Python configurado
@@ -34,7 +34,7 @@ La simulación permite probar comandos de control y validar comportamientos sin 
 
 ---
 
-## 🚀 Ejecución básica
+##  Ejecución básica
 
 Según el flujo del curso, la simulación se ejecuta con:
 
@@ -48,7 +48,7 @@ Este comando inicia el entorno de control para el robot en simulación.
 
 ---
 
-## ▶️ Ejecución de ejemplos en Python
+##  Ejecución de ejemplos en Python
 
 Ir al directorio de ejemplos:
 
@@ -64,7 +64,7 @@ python3 go2_sport_client_example.py <networkInterface>
 
 ---
 
-## ⌨️ Control con teclado (WASD)
+##  Control con teclado (WASD)
 
 Ejecutar:
 
@@ -84,17 +84,17 @@ python3 go2_wasd_control.py <networkInterface>
 
 ---
 
-## 🔄 Flujo típico de uso
+##  Flujo típico de uso
 
-1️⃣ Iniciar simulación
-2️⃣ Ejecutar script Python
-3️⃣ Enviar comandos
-4️⃣ Observar comportamiento
-5️⃣ Ajustar parámetros
+1️ Iniciar simulación
+2️ Ejecutar script Python
+3️ Enviar comandos
+4️ Observar comportamiento
+5️ Ajustar parámetros
 
 ---
 
-## 🤖 ¿Qué se puede probar?
+##  ¿Qué se puede probar?
 
 * Movimiento del robot
 * Control de velocidad
@@ -103,7 +103,7 @@ python3 go2_wasd_control.py <networkInterface>
 
 ---
 
-## ⚠️ Notas importantes
+##  Notas importantes
 
 * Usar la interfaz de red correcta (`eth0`, `lo`, etc.)
 * Los comandos son equivalentes al robot real
@@ -111,7 +111,7 @@ python3 go2_wasd_control.py <networkInterface>
 
 ---
 
-## 📚 Recomendación
+##  Recomendación
 
 Antes de ejecutar en robot real:
 

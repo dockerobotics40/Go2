@@ -1,34 +1,34 @@
-# 🧭 Navegación en Unitree Go2
+#  Navegación en Unitree Go2
 ---
-# 📌 Descripción
+#  Descripción
 La navegación en el robot Unitree Go2 permite desplazarse en el entorno mediante trayectorias predefinidas o control autónomo básico basado en odometría.
 ---
-# 🧠 Conceptos Clave
-# 📍 Waypoints
+#  Conceptos Clave
+#  Waypoints
 Puntos en el espacio que el robot sigue secuencialmente.
 ```text
 (0,0) -> (1,0) -> (1,1) -> (0,1)
 ```
 ---
-# 🛰️ Odometría
+#  Odometría
 Permite estimar:
 Posición (x, y, z)
 Orientación (roll, pitch, yaw)
 Velocidades
 ---
-# 🤖 Navegación Autónoma
+#  Navegación Autónoma
 Ciclo de control:
 Leer estado
 Definir objetivo
 Calcular error
 Ajustar movimiento
 ---
-# ⚙️ Flujo de Navegación
+#  Flujo de Navegación
 ```text
 Inicialización -> Odometría -> Objetivo -> Error -> Comando -> Robot -> Repetir
 ```
 ---
-# 🔁 Diagrama de Flujo
+#  Diagrama de Flujo
 ```text
 [Inicio]
    |
@@ -51,22 +51,22 @@ Inicialización -> Odometría -> Objetivo -> Error -> Comando -> Robot -> Repeti
 [Repetir]
 ```
 ---
-# 🚀 Navegación por Waypoints
-# 📄 Archivo
+#  Navegación por Waypoints
+#  Archivo
 ```bash
 go2_patrol_waypoints.py
 ```
-# ▶️ Ejecución
+#  Ejecución
 ```bash
 python3 go2_patrol_waypoints.py <networkInterface>
 ```
 ---
-# 🧩 Funcionamiento
+#  Funcionamiento
 Definir puntos
 Iterar
 Enviar comandos
 ---
-# 📌 Ejemplo
+#  Ejemplo
 ```text
 (0,0,0)
 (1,0,0)
@@ -74,49 +74,49 @@ Enviar comandos
 (0,1,180)
 ```
 ---
-# ⚠️ Limitaciones
+#  Limitaciones
 No evita obstáculos
 No corrige error
 ---
-# 🛰️ Uso de Odometría
-# 📄 Archivo
+#  Uso de Odometría
+#  Archivo
 ```bash
 go2_odometry.py
 ```
-# ▶️ Ejecución
+#  Ejecución
 ```bash
 python3 go2_odometry.py <networkInterface>
 ```
 ---
-# 📊 Ejemplo
+#  Ejemplo
 ```text
 Position: x=1.20, y=0.35
 Yaw: 90°
 ```
 ---
-# 🤖 Navegación Autónoma Básica
-# 🧩 Control
+#  Navegación Autónoma Básica
+#  Control
 ```text
 error = objetivo - actual
 ```
 ---
-# 🔁 Loop
+#  Loop
 ```text
 leer -> calcular -> enviar
 ```
 ---
-# 🧪 Flujo de Trabajo
+#  Flujo de Trabajo
 Conectar robot
 Verificar conexión
 Ejecutar odometría
 Definir puntos
 Ejecutar navegación
 ---
-# 🧰 Buenas Prácticas
+#  Buenas Prácticas
 Seguridad
 Velocidad baja
 Validación
 Debug
 ---
-# 🧠 Conclusión
+#  Conclusión
 La navegación permite pasar de control manual a comportamiento autónomo básico.

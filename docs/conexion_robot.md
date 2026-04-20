@@ -1,8 +1,8 @@
-# 🔌 Conexión al robot Unitree Go2
+#  Conexión al robot Unitree Go2
 
 ---
 
-## 📌 Descripción
+##  Descripción
 
 Este apartado explica cómo conectar el robot Unitree Go2 al computador para poder enviar comandos y recibir información en tiempo real.
 
@@ -10,9 +10,9 @@ La conexión se realiza principalmente mediante **Ethernet** y configuración ma
 
 ---
 
-## 🧠 Conceptos Clave
+##  Conceptos Clave
 
-### 🌐 Comunicación por red
+###  Comunicación por red
 
 * El robot y el PC deben estar en la misma red
 * Se utiliza comunicación basada en **DDS**
@@ -21,7 +21,7 @@ La conexión se realiza principalmente mediante **Ethernet** y configuración ma
   * Enviar comandos
   * Recibir estado del robot
 
-### 🔗 Interfaz de red
+###  Interfaz de red
 
 * Es el medio por el cual el PC se comunica con el robot
 * Ejemplo:
@@ -31,7 +31,7 @@ La conexión se realiza principalmente mediante **Ethernet** y configuración ma
 
 ---
 
-## ⚙️ Requisitos
+##  Requisitos
 
 * Robot Unitree Go2 encendido
 * Cable Ethernet
@@ -40,14 +40,14 @@ La conexión se realiza principalmente mediante **Ethernet** y configuración ma
 
 ---
 
-## 🔌 Paso 1: Conexión física
+##  Paso 1: Conexión física
 
 * Conectar el robot al PC mediante cable Ethernet
 * Encender el robot desde el botón principal
 
 ---
 
-## 🎮 Paso 2: Activar modo Debug
+##  Paso 2: Activar modo Debug
 
 (Solo necesario para control de bajo nivel)
 
@@ -58,7 +58,7 @@ En el control remoto:
 
 ---
 
-## 🌐 Paso 3: Configuración de red
+##  Paso 3: Configuración de red
 
 En el computador:
 
@@ -69,7 +69,7 @@ En el computador:
 IP: 192.168.123.222
 ```
 
-📌 IP del robot:
+ IP del robot:
 
 ```bash id="j8k2lm"
 192.168.123.161
@@ -77,7 +77,7 @@ IP: 192.168.123.222
 
 ---
 
-## ✅ Paso 4: Verificar conexión
+##  Paso 4: Verificar conexión
 
 ### Probar conexión con ping:
 
@@ -85,11 +85,11 @@ IP: 192.168.123.222
 ping 192.168.123.161
 ```
 
-Si hay respuesta → conexión exitosa ✅
+Si hay respuesta → conexión exitosa 
 
 ---
 
-## 🔍 Paso 5: Identificar interfaz de red
+##  Paso 5: Identificar interfaz de red
 
 ```bash id="z4m1px"
 ip a
@@ -99,7 +99,7 @@ Buscar la interfaz activa (ejemplo: `eth0`)
 
 ---
 
-## 💻 Paso 6: Conexión por SSH
+##  Paso 6: Conexión por SSH
 
 ```bash id="m2w7rf"
 ssh unitree@192.168.123.161
@@ -112,7 +112,7 @@ ssh unitree@192.168.123.161
 
 ---
 
-## 🔎 Verificación dentro del robot
+##  Verificación dentro del robot
 
 ```bash id="r8k3dc"
 hostname
@@ -121,7 +121,7 @@ ifconfig
 
 ---
 
-## 📡 Prueba de conectividad
+##  Prueba de conectividad
 
 ```bash id="p1n6qa"
 ping 192.168.123.161
@@ -129,7 +129,7 @@ ping 192.168.123.161
 
 ---
 
-## 📁 Transferencia de archivos
+##  Transferencia de archivos
 
 Enviar archivos al robot:
 
@@ -139,7 +139,7 @@ scp archivo.py unitree@192.168.123.161
 
 ---
 
-## 🤖 ¿Qué permite esta conexión?
+##  ¿Qué permite esta conexión?
 
 ✔ Enviar comandos al robot
 ✔ Leer sensores
@@ -148,7 +148,7 @@ scp archivo.py unitree@192.168.123.161
 
 ---
 
-## ⚠️ Notas importantes
+##  Notas importantes
 
 * Ambos dispositivos deben estar en la misma red
 * Verificar siempre la IP antes de ejecutar código
@@ -157,7 +157,7 @@ scp archivo.py unitree@192.168.123.161
 
 ---
 
-## 📚 Recomendación
+##  Recomendación
 
 Flujo correcto:
 

@@ -23,7 +23,7 @@ cd build
 cmake ..
 ```
 
-## 📌 Resultado esperado
+##  Resultado esperado
 
 ![Build SDK2](../images/Instalacion_unitree_sdk2/build.png)
 
@@ -33,7 +33,7 @@ cmake ..
 sudo make install
 ```
 
-## 📌 Resultado esperado
+##  Resultado esperado
 
 ![Install SDK2](../images/Instalacion_unitree_sdk2/install.png)
 
